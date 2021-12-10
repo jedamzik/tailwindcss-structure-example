@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import Nav from './components/Nav'
+import Nav from './components/molecules/nav/Nav'
 
 import Home from './views/Home'
 import About from './views/About'

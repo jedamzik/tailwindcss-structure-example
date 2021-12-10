@@ -1,5 +1,5 @@
 import React from 'react';
-import { Feature } from '../../types/Feature';
+import { Feature } from '../../../types/Feature';
 import FeatureListItem from './FeatureListItem';
 
 interface FeatureListProps {

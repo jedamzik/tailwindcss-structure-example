@@ -1,5 +1,5 @@
 import React from 'react'
-import FeatureSection from '../components/feature-section/FeatureSection';
+import FeatureSection from '../components/organisms/feature-section/FeatureSection';
 import { Feature } from '../types/Feature';
 import {
     AnnotationIcon,
