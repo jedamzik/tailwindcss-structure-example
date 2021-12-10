@@ -1,6 +1,4 @@
 {
-  "name": "vite-react-tailwind-starter",
-  "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
