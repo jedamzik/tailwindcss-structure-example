@@ -1,5 +1,6 @@
 import React from 'react';
 import { Feature } from '../../types/Feature';
+import styles from './FeatureSection.module.css';
 
 interface FeatureListItemProps {
     feature: Feature;
@@ -7,14 +8,14 @@ interface FeatureListItemProps {
 
 const FeatureListItem = ({ feature }: FeatureListItemProps) => {
     return (
-        <div key={feature.name} className="relative">
+        <div key={feature.name} className={styles['FeatureListItem']}>
             <dt>
-                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <feature.icon className="h-6 w-6" aria-hidden="true" />
+                <div className={styles['FeatureListItem__icon']}>
+                    <feature.icon className={styles['FeatureListItem__icon__inner']} aria-hidden="true" />
                 </div>
-                <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
+                <p className={styles['FeatureListItem__name']}>{feature.name}</p>
             </dt>
-            <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
+            <dd className={styles['FeatureListItem__description']}>{feature.description}</dd>
         </div>
     );
 }
